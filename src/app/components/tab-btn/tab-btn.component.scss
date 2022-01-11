@@ -1,0 +1,18 @@
+button{
+    text-decoration: none;
+    // color: black;
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    padding-top: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 0;
+    transition: all .3s ease-in-out;
+}
+
+button:focus{
+    outline: none;
+    background-color:rgb(69, 68, 80);
+    margin-top: -4rem;
+    color: whitesmoke;
+}

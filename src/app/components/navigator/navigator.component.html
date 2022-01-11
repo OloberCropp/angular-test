@@ -1,0 +1,20 @@
+<div class="navigator w-50 m-auto">
+    
+    <div class="tabs-selector row m-0">
+        <app-tab-btn class="col p-0" tabTitle='Income' (tabSelected)="toggleContent('0')"></app-tab-btn>
+        <app-tab-btn class="col p-0" tabTitle='Outcome' (tabSelected)="toggleContent('1')"></app-tab-btn>
+        <app-tab-btn class="col p-0" tabTitle='Loans' (tabSelected)="toggleContent('2')"></app-tab-btn>
+        <app-tab-btn class="col p-0" tabTitle='Investments' (tabSelected)="toggleContent('3')"></app-tab-btn>
+    </div>
+
+    <div class="mainContent">
+        
+        <div class="tab m-auto w-100 row border-bottom">
+            <p class="col h4 m-2 text-center">Name</p>
+            <p class="col h4 m-2 text-center">Amount</p>
+        </div>
+
+        <app-tab *ngFor='let person of filteredData' [person]="person" ></app-tab>
+    </div>
+    
+</div>

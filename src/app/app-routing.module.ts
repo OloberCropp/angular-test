@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ParamMap } from '@angular/router';
 
-const routes: Routes = [];
+import { NavigatorComponent } from './components/navigator/navigator.component';
+
+const routes: Routes = [
+  { path: 'navigator', component : NavigatorComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
